@@ -1,0 +1,14 @@
+Đề bài: 
+
+Kiểm tra nhiệt độ và bật/tắt đèn LED tương ứng.
+Kiểm tra điện áp đầu vào và hiển thị trạng thái 'Ổn định' hoặc 'Cảnh báo'.
+Xác định mức pin và hiển thị thông báo tương ứng (Thấp, Trung bình, Cao).
+Bật quạt làm mát nếu nhiệt độ vượt ngưỡng cho phép.
+Chuyển đổi chế độ hoạt động của thiết bị dựa vào nút nhấn.
+In ra 10 lần dòng chữ 'Xin chào'.
+Tính tổng các số từ 1 đến 10.
+In ra các số chẵn từ 2 đến 20.
+Hiển thị số đếm từ 10 đến 1.
+Đếm và in các số chia hết cho 3 từ 1 đến 30.
+Đo 10 lần nhiệt độ và tính trung bình.
+Chớp tắt LED 10 lần với khoảng dừng.

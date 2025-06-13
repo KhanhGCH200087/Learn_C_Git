@@ -12,6 +12,22 @@ int main(void){
     } else {
         printf("\n Led level 0");
     }
-    
     return 0;
 }
+
+//Bài thầy chữa
+/* #include <stdio.h>
+
+int main(void){
+    int temp = 0;
+    printf("Enter temperature: ");
+    scanf("%d", &temp);
+    if(temp < 0 || temp > 50){
+        printf("\nWarning temperature");
+    } else if((temp >= 0 && temp <= 15) || (temp>= 30 && temp <= 50)){
+        printf("\nTurn off Light");
+    } else if(temp >= 15 && temp <= 30){
+        printf("\n Turn on light");
+    }
+    return 0;
+} */

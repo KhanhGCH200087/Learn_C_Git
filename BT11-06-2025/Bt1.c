@@ -31,3 +31,36 @@ int main(void){
     }
     return 0;
 } */
+
+//Nâng cao thêm chút, chạy chương trình liên tục đến chán thì dừng
+/*
+#include <stdio.h>
+int main(void){
+    int temp = 0;
+    int key_keyword;
+    while(1 == 1){
+        printf("\nEnter temperature: ");
+        scanf("%d", &temp);
+        
+        printf("\nEnter continue '1' or stop '2': ");
+        scanf("%d", &key_keyword);
+
+        switch(key_keyword){
+            case 1: 
+                if(temp < 0 || temp > 50){
+                    printf("\nWarning temperature\n");
+                } else if((temp >= 0 && temp <= 15) || (temp>= 30 && temp <= 50)){
+                    printf("\nTurn off Light\n");
+                } else if(temp >= 15 && temp <= 30){
+                    printf("\nTurn on light\n");
+                }
+                break;
+            case 2: 
+                return 0;
+            default:
+                return 0;
+        }
+    }
+    return 0;
+}
+*/

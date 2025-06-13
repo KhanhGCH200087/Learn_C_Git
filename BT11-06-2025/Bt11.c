@@ -11,7 +11,7 @@ int main(void){
         sum = sum + x;
         count++;
     }
-    float result = sum / 10 * 1.0;
+    float result = sum * 1.0 / 10;
     printf("Final result: %f", result);
     return 0;
 }

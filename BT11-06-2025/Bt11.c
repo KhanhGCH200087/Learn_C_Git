@@ -4,7 +4,7 @@ int main(void){
     //Bt11: Đo 10 lần nhiệt độ và tính trung bình
     int sum = 0;
     int x = 0;
-    int count = 0;
+    int count = 1;
     while (count <= 10){
         printf("Enter x: ");
         scanf("%d", &x);

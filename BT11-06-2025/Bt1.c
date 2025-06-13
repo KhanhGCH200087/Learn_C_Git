@@ -64,3 +64,26 @@ int main(void){
     return 0;
 }
 */
+
+/*
+#include<stdio.h>
+int main(){
+    int temp = 0;
+    printf("Enter temperature: ");
+    scanf("%d", &temp);
+    switch(temp){
+        case 0 ... 15: // ... dùng để lấy các giá trị trong khoảng 0 đến 15 case 0, case 1, case 2, ... case 15
+            printf("Light OFF");
+            break;
+        case 16 ... 29:
+            printf("Light ON");
+            break;
+        case 30 ... 50:
+            printf("Light OFF");
+            break;
+        default: 
+            break;
+    }
+    return 0;
+}
+*/

@@ -5,13 +5,85 @@ int main(void){
     int temp;
     printf("Enter temperature: ");
     scanf("%d", &temp);
-    if(10 <= temp <= 25){
+    if(temp >= 10 && temp <= 25){
         printf("\nLed level 1");
-    } else if (26 <= temp <= 30){
+    } else if (temp >= 26 && temp <= 30){
         printf("\nLed level 2");
     } else {
         printf("\n Led level 0");
     }
-    
     return 0;
 }
+
+//Bài thầy chữa
+/* #include <stdio.h>
+
+int main(void){
+    int temp = 0;
+    printf("Enter temperature: ");
+    scanf("%d", &temp);
+    if(temp < 0 || temp > 50){
+        printf("\nWarning temperature");
+    } else if((temp >= 0 && temp <= 15) || (temp>= 30 && temp <= 50)){
+        printf("\nTurn off Light");
+    } else if(temp >= 15 && temp <= 30){
+        printf("\n Turn on light");
+    }
+    return 0;
+} */
+
+//Nâng cao thêm chút, chạy chương trình liên tục đến chán thì dừng
+/*
+#include <stdio.h>
+int main(void){
+    int temp = 0;
+    int key_keyword;
+    while(1 == 1){
+        printf("\nEnter temperature: ");
+        scanf("%d", &temp);
+        
+        printf("\nEnter continue '1' or stop '2': ");
+        scanf("%d", &key_keyword);
+
+        switch(key_keyword){
+            case 1: 
+                if(temp < 0 || temp > 50){
+                    printf("\nWarning temperature\n");
+                } else if((temp >= 0 && temp <= 15) || (temp>= 30 && temp <= 50)){
+                    printf("\nTurn off Light\n");
+                } else if(temp >= 15 && temp <= 30){
+                    printf("\nTurn on light\n");
+                }
+                break;
+            case 2: 
+                return 0;
+            default:
+                return 0;
+        }
+    }
+    return 0;
+}
+*/
+
+/*
+#include<stdio.h>
+int main(){
+    int temp = 0;
+    printf("Enter temperature: ");
+    scanf("%d", &temp);
+    switch(temp){
+        case 0 ... 15: // ... dùng để lấy các giá trị trong khoảng 0 đến 15 case 0, case 1, case 2, ... case 15
+            printf("Light OFF");
+            break;
+        case 16 ... 29:
+            printf("Light ON");
+            break;
+        case 30 ... 50:
+            printf("Light OFF");
+            break;
+        default: 
+            break;
+    }
+    return 0;
+}
+*/
